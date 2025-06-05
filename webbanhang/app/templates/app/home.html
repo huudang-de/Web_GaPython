@@ -60,7 +60,7 @@
         <div class="d-flex justify-content-between align-items-center mt-2">
           <div>
             <button data-product= {{product.id}} data-action="add" class="btn btn-outline-secondary btn-sm update-cart">Add to cart</button>
-            <a class="btn btn-outline-success btn-sm" href="#">View</a>
+            <a class="btn btn-outline-success btn-sm" href="{% url 'detail' %}?id={{product.id}}">View</a>
           </div>
           <h5 class="mb-0 text-success"><strong>${{ product.price | floatformat:2 }}</strong>
           </h5>
